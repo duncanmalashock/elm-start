@@ -9,7 +9,7 @@ main =
         { init = init
         , view = view
         , update = update
-        , subscriptions = subscriptions
+        , subscriptions = \_ -> Sub.none
         }
 
 
@@ -19,11 +19,6 @@ type alias Model =
 
 type Msg
     = NoOp
-
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-    Sub.none
 
 
 init : ( Model, Cmd Msg )
