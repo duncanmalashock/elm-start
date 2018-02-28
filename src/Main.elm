@@ -28,7 +28,7 @@ init =
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    ( {}, Cmd.none )
+    ( model, Cmd.none )
 
 
 view : Model -> Html Msg
